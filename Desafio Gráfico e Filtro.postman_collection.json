@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "e23e6153-3f68-40d4-ae47-fcdb7808f32a",
+		"name": "Desafio Gráfico e Filtro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26170376",
+		"_collection_link": "https://dsprod.postman.co/workspace/Java-Spring-aulas~5cff5d40-2e9f-4aee-8ebe-ac37cfad24c3/collection/26170376-e23e6153-3f68-40d4-ae47-fcdb7808f32a?action=share&source=collection_link&creator=26170376"
+	},
+	"item": [
+		{
+			"name": "Sales by gender",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/sales/by-gender?storeId=0",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales",
+						"by-gender"
+					],
+					"query": [
+						{
+							"key": "storeId",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales by gender Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/sales/summary?storeId=0",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales",
+						"summary"
+					],
+					"query": [
+						{
+							"key": "storeId",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All stores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/stores",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"stores"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
